@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background-color: #B8DDF2;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #F8FCFF;
+    border-radius: 20px;
+    padding: 4%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+h1 {
+	font-size: 18px;
+	text-align: center;
+	color: #527B9B;
+}
+
+.timer-modes {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.timer-modes button {
+    background-color: #D9ECF7;
+	border: none;
+	border-radius: 10px;
+	color: #527B9B;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	font-size: clamp(11px, 2vw, 14px);
+	padding: 10px clamp(8px, 2vw, 16px);
+}
+
+.digital-clock {
+    text-align: center;
+    font-size: clamp(85px, 10vw, 64px);
+    color: #527B9B;
+    font-weight: bold;
+}
+
+.slime-mascot {
+    text-align: center;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-controls {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.main-controls button {
+	background-color: #D9ECF7;
+	color: #527B9B;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	font-size: clamp(11px, 2vw, 14px);
+	padding: 10px clamp(8px, 2vw, 16px);
+}
+
+.slime-mascot img {
+    width: 100%;
+    height: 100%;
+    max-height: 35vh;
+    object-fit: contain;
+}
+
+.edit-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 55, 70, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #F8FCFF;
+    padding: 24px;
+    border-radius: 20px;
+    width: min(350px, 90%);
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.popup-content h2 {
+    color: #527B9B;
+    text-align: center;
+    font-size: 20px;
+}
+
+.popup-content label {
+    display: block;
+    margin-top: 12px;
+    color: #527B9B;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #B8DDF2;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.popup-button {
+    background-color: #D9ECF7;
+	color: #527B9B;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.timer-modes,
+.main-controls {
+    flex-wrap: wrap;
+}
+
+.timer-modes button:hover,
+.main-controls button:hover,
+.popup-button:hover {
+    background-color: #B8DDF2;
+}

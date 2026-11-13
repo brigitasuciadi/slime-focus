@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Slime Focus</title>
+		<link rel="stylesheet" href="style.css">			
+</head>
+
+<body>
+<main>
+<header> 
+	<h1>SLIME POMODORO TIMER</h1>
+</header>
+
+<div class="timer-modes">
+	<button type="button"> Pomodoro </button>
+	<button type="button"> Short Break </button>
+	<button type="button"> Long Break </button>
+</div>
+
+<div class="digital-clock">
+	<span id="timer-display"> 25:00 </span>
+</div>
+
+<div class="slime-mascot">
+	<img src="assets/images/slime.gif" alt="Slime mascot">
+</div>
+
+<div class="main-controls">
+	<button type="button"> Start </button>
+	<button type="button"> Reset </button>
+	<button type="button"> Edit Timer </button>
+</div>
+
+<div class="edit-popup">
+    <div class="popup-content">
+        <h2>EDIT TIMER</h2>
+
+        <label for="pomodoro-input">Pomodoro (minutes)</label>
+        <input type="number" id="pomodoro-input" value="25" step="1">
+
+        <label for="short-break-input">Short Break (minutes)</label>
+		<input type="number" id="short-break-input" value="5" step="1">
+
+		<label for="long-break-input">Long Break (minutes)</label>
+		<input type="number" id="long-break-input" value="15" step="1">
+
+        <button type="button" class="popup-button">Cancel</button>
+<button type="button" class="popup-button">Save</button>
+    </div>
+</div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>

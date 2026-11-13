@@ -1,0 +1,27 @@
+
+{
+  "name": "slime-focus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.slimefocus.app",
+    "productName": "Slime Focus",
+    "win": {
+      "target": "nsis",
+	   "icon": "slime.ico"
+    }
+  }
+}
